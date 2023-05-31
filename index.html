@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+        
+                       height: 120px;
+           
+            display: flex;
+            
+        
+        }
+        .cards{
+            width:90px;
+            margin: 10px;
+            border:  2px solid black;
+            border-radius: 5px;
+
+          
+        }
+        img{
+            width:100% ;
+             height: 50%; 
+        }
+        h3{
+            text-align: center;
+            text-decoration: underline;
+            transform: translateY(-38px);
+        }
+        p{
+            text-align: center;
+            transform: translateY(-60px);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <img src="" alt=""> -->
+    
+    <script src="card.js"></script>
+    <script>
+        document.write("<div class='container'>")
+        arr.map((elements) => {
+            document.write("<div class='cards'>");
+               document.write(`<img src="${elements.i}" alt="">`);
+                document.write("<h3 >"+elements.m+"</h3>");
+                document.write("<p>"+elements.d+"</p>")
+                document.write("</div>");
+        })
+        document.write("<div>");
+        
+        
+    </script>
+</body>
+</html>
